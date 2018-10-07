@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,  MatCardModule } from '@angular/material';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeaderComponent } from './components/navbar/header/header.component';
+import { SidenavListComponent } from './components/navbar/sidenav-list/sidenav-list.component';
+
 import { DogparkListComponent } from './dogpark/dogpark-list/dogpark-list.component';
 
 import { MaterialModule } from './material.module';
@@ -22,7 +25,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    DogparkListComponent
+    DogparkListComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
