@@ -1,3 +1,16 @@
+<section class="main" >
+  <ul class="dogpark-list">
+    <li *ngFor="let dogpark of dogparks" >
+      <app-dogpark-list-item
+        [dogpark]="dogpark"
+
+    </li>
+  </ul>
+</section>
+
+
+
+
 <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>

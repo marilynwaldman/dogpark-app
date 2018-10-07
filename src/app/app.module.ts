@@ -15,12 +15,18 @@ import { SidenavListComponent } from './components/navbar/sidenav-list/sidenav-l
 import { AppRoutingModule } from './app-routing.module';
 import { DogparkListComponent } from './dogpark/dogpark-list/dogpark-list.component';
 
+//import { DogparkListFooterComponent } from './dogpark/dogpark-list-footer/dogpark-list-footer.component';
+//import { DogparkListHeaderComponent } from './dogpark/dogpark-list-header/dogpark-list-header.component';
+
+
 import { DogparkDataService } from './services/dogpark-data.service';
 import { ApiService } from './services/api.service';
 
 import { MaterialModule } from './material.module';
 
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { DogparkListItemComponent } from './dogpark/dogpark-list-item/dogpark-list-item.component';
+import { DogparksComponent } from './dogpark/dogparks/dogparks.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,11 @@ import { FlexLayoutModule} from '@angular/flex-layout';
     NavbarComponent,
     DogparkListComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    DogparkListItemComponent,
+    DogparksComponent,
+    // DogparkListFooterComponent,
+    // DogparkListHeaderComponent
   ],
   imports: [
     BrowserModule,

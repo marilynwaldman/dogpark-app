@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Dogpark } from '../../models/dogpark';
 
-@Component({
-  selector: 'app-dogpark-list',
-  templateUrl: './dogpark-list.component.html',
-  styleUrls: ['./dogpark-list.component.css']
-})
-export class DogparkListComponent implements OnInit {
+@Component(
+  {
+    selector: 'app-dogpark-list',
+    templateUrl: './dogpark-list.component.html',
+    styleUrls: ['./dogpark-list.component.css']
+  }
+)
+export class DogparkListComponent {
 
-  constructor() { }
+  @Input()
+  dogparks: Dogpark[];
 
-  ngOnInit() {
+
+  constructor() {
+
   }
 
 }
