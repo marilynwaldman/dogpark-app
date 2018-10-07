@@ -15,9 +15,6 @@ import { MaterialModule } from './material.module';
 
 import { FlexLayoutModule} from '@angular/flex-layout';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
