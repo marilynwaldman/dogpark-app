@@ -1,0 +1,19 @@
+{
+  "dogparks": [
+    {
+
+      "city": "denver",
+      "id": 1,
+      "name": "Twin Lakes Dog Park"
+    },
+    {
+      "id": 2,
+      "name": "Longmont Dog Park"
+    },
+    {
+
+      "id": 3,
+      "name": "Boulder"
+    }
+  ]
+}
