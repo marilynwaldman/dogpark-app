@@ -1,7 +1,18 @@
 <section class="dogparkapp">
   <ul>
-    <li *ngFor="let item of dogparks; let i = index">
-      {{i}} {{item.name}}
+    <li *ngFor="let dogpark of dogparks; let i = index">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{dogpark.name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+          <button mat-raised-button color="primary"><a [routerLink]="['dogpark']" [queryParams]="{id: dogpark.id}">Select</a></button>
+          <a routerLink="/message-compose"><button color="warn">Compose</button></a>
+        </mat-card-actions>
+      </mat-card>
     </li>
   </ul>
 </section>

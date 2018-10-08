@@ -4,16 +4,19 @@
 
       "city": "denver",
       "id": 1,
-      "name": "Twin Lakes Dog Park"
+      "name": "Twin Lakes Dog Park",
+      "pid" : 1
     },
     {
       "id": 2,
-      "name": "Longmont Dog Park"
+      "name": "Longmont Dog Park",
+      "pid" : 2
     },
     {
 
       "id": 3,
-      "name": "Boulder"
+      "name": "Boulder",
+      "pid" : 3
     }
   ]
 }

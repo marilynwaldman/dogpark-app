@@ -3,6 +3,7 @@ import { DogparkDataService } from '../../services/dogpark-data.service';
 import { Dogpark } from '../../models/dogpark';
 import { ActivatedRoute } from '@angular/router';
 import { map, catchError, tap } from 'rxjs/operators';
+import { RouterModule } from '@angular/router';
 
 
 @Component({

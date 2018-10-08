@@ -7,6 +7,7 @@ export class Dogpark {
   zip: Number = 0;
   lat: Number = 0;
   lon: Number = 0;
+  pid: Number = 0;
 
   constructor(values: Object = {}) {
     Object.assign(this, values);

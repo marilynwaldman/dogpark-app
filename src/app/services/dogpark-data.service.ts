@@ -18,7 +18,7 @@ export class DogparkDataService {
   }
 
   // Simulate DELETE /dogparks/:id
-  deleteDogparkById(dogparkId: number): Observable<Dogpark> {
+  deleteDogparkById(dogparkId): Observable<Dogpark> {
     return this.api.deleteDogparkById(dogparkId);
   }
 

@@ -6,13 +6,19 @@ import { DogparksComponent} from './dogpark/dogparks/dogparks.component';
 import { DogparksResolver } from './dogparks.resolver';
 
 const routes: Routes = [
-
-  { path: 'dogpark',
+  {
+    path: 'dogpark/:id',
+    component: DogparkListComponent,
+     pathMatch: 'full'
+  },
+  {
+    path: 'dogpark',
     component: DogparksComponent,
     resolve: {
       dogparks: DogparksResolver
-    },
-  },
+
+    }
+  }
 ];
 
 @NgModule({
